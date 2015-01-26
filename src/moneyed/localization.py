@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 from decimal import Decimal, ROUND_HALF_EVEN
 import moneyed
 
-DEFAULT = "default"
+DEFAULT = "DEFAULT"
 
 
 class CurrencyFormatter(object):

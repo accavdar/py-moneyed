@@ -15,3 +15,5 @@ build/
 .pydevproject
 .settings
 .python-version
+
+.DS_Store

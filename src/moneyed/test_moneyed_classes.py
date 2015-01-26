@@ -99,6 +99,9 @@ class TestMoney:
         assert format_money(one_million_pln, locale='pl_PL',
                             decimal_places=0) == '1 000 000 zł'
 
+        # locale == tr_TR, no decimal places
+        assert format_money(self.one_million_bucks, locale='tr_TR', decimal_places=0) == 'US$1,000,000'
+
     def test_add(self):
         assert (self.one_million_bucks + self.one_million_bucks
                 == Money(amount='2000000', currency=self.USD))
